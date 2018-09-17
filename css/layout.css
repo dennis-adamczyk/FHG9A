@@ -1,0 +1,145 @@
+/* ---------- header.php ---------- */
+header { position: fixed; left: 0; right: 0; top: 0; z-index: 10; background-color: #2196F3; height: 64px; }
+
+@media screen and (max-width: 799px) { header { height: 56px; } }
+
+@media screen and (min-width: 1480px) { header { left: 256px; } }
+
+header .header-menu { color: #FFF; width: 24px; height: 24px; border-radius: 50%; position: absolute; top: 50%; transform: translateY(-50%); padding: 8px; margin-left: -8px; cursor: pointer; left: 24px; }
+
+@media screen and (max-width: 799px) { header .header-menu { left: 16px; } }
+
+@media screen and (min-width: 1480px) { header .header-menu { display: none; } }
+
+header .header-title { color: #FFF; margin: 0; padding: 0; position: absolute; top: 50%; transform: translateY(-50%); -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; cursor: default; font-size: 18px; left: 80px; }
+
+header .header-title i { position: relative; top: 6px; }
+
+@media screen and (max-width: 799px) { header .header-title { left: 72px; } }
+
+header .header-more { color: #FFF; width: 24px; height: 24px; border-radius: 50%; position: absolute; top: 50%; transform: translateY(-50%); padding: 8px; margin-right: -8px; cursor: pointer; right: 24px; }
+
+@media screen and (max-width: 799px) { header .header-more { right: 16px; } }
+
+div.header-more-menu { z-index: 13; padding: 0; margin: 0; padding: 8px 0 8px 0; border-radius: 2px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); position: fixed; right: 16px; top: 12px; min-width: 160px; background-color: #FFF; font-size: 15px; display: none; }
+
+div.header-more-menu ul { list-style: none; padding-left: 0; margin: 0; }
+
+div.header-more-menu ul li { height: 32px; padding: 0 24px; cursor: pointer; }
+
+div.header-more-menu ul li p { margin: 0; position: relative; top: 50%; transform: translateY(-50%); white-space: nowrap; }
+
+@media screen and (max-width: 799px) { div.header-more-menu { right: 8px; top: 8px; min-width: 140px; font-size: 16px; }
+  div.header-more-menu ul li { height: 48px; padding: 0 16px; } }
+
+div.header-more-menu-overlay { z-index: 12; position: fixed; top: 0; left: 0; bottom: 0; right: 0; display: none; }
+
+/* ---------- nav.php ---------- */
+nav { z-index: 13; background-color: #FFF; position: fixed; top: 0; left: -330px; bottom: 0; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); overflow-y: auto; transition: left 0.4s ease; }
+
+@media screen and (min-width: 1480px) { nav { left: 0; z-index: 10; box-shadow: none; border-right: solid 1px #BDBDBD; transition: none; } }
+
+nav div.logo { width: 100%; height: 56px; margin: 0; }
+
+@media screen and (min-width: 800px) and (max-width: 1479px) { nav div.logo { height: 64px; } }
+
+@media screen and (min-width: 1480px) { nav div.logo { height: 64px; } }
+
+nav div.logo img { height: 90%; width: auto; position: relative; left: 50%; top: 50%; cursor: pointer; transform: translateX(-50%) translateY(-50%); }
+
+nav div.line { background-color: #BDBDBD; margin: 0; height: 1px; width: 100%; }
+
+nav div.logo-list-line { position: absolute; top: 56px; left: 0; right: 0; }
+
+@media screen and (min-width: 800px) and (max-width: 1479px) { nav div.logo-list-line { top: 64px; } }
+
+@media screen and (min-width: 1480px) { nav div.logo-list-line { top: 64px; } }
+
+nav ul.list { position: relative; left: 0; right: 0; width: 100%; margin: 8px 0 8px 0; padding: 0; }
+
+nav ul.list li.subheader p { margin: 0; position: absolute; top: 50%; transform: translateY(-50%); left: 16px; font-weight: 500; font-size: 14px; color: rgba(0, 0, 0, 0.54); }
+
+@media screen and (min-width: 800px) and (max-width: 1479px) { nav ul.list li.subheader p { left: 24px; } }
+
+@media screen and (min-width: 1480px) { nav ul.list li.subheader p { left: 24px; } }
+
+nav ul.list li { position: relative; list-style: none; height: 48px; width: 100%; cursor: pointer; }
+
+nav ul.list li i { position: absolute; top: 50%; left: 16px; transform: translateY(-50%); width: 24px; height: 24px; color: rgba(0, 0, 0, 0.54); }
+
+@media screen and (min-width: 800px) and (max-width: 1479px) { nav ul.list li i { left: 24px; } }
+
+@media screen and (min-width: 1480px) { nav ul.list li i { left: 24px; } }
+
+nav ul.list li p { position: absolute; top: 50%; left: 72px; transform: translateY(-50%); margin: 0; padding: 0; font-weight: 500; font-size: 14px; color: rgba(0, 0, 0, 0.87); }
+
+nav div.list-sublist-line { position: relative; left: 0; right: 0; }
+
+div.nav-overlay { z-index: 12; position: fixed; left: 0; top: 0; right: 0; bottom: 0; display: none; opacity: 0; background-color: rgba(0, 0, 0, 0.5); transition: opacity 0.3s ease; }
+
+/* ---------- CONTENT ---------- */
+div.content { position: absolute; top: 64px; right: 0; left: 0; background-color: #EEEEEE; height: auto; /* ----- EXTENDED-HEADER -----*/ }
+
+@media screen and (max-width: 799px) { div.content { top: 56px; } }
+
+@media screen and (min-width: 1480px) { div.content { left: 256px; } }
+
+div.content div.extended-header { background-color: #2196F3; position: absolute; top: -100vh; left: 0; right: 0; height: calc(100vh + 64px); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
+
+@media screen and (max-width: 799px) { div.content div.extended-header { height: calc(100vh + 56px); } }
+
+/* ---------- INSTALL ---------- */
+div.install { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: #FFF; z-index: 101; }
+
+div.install ~ div.content { overflow: hidden; height: 1px; max-height: 1px; }
+
+div.install img { height: 48px; width: 48px; display: block; margin: 16px auto; }
+
+div.install p.title { text-align: center; margin: 75px 48px 15px 48px; font-size: 20px; font-weight: 500; color: #2196F3; }
+
+@media screen and (max-height: 600px) { div.install p.title { margin: 20px 48px 15px 48px; } }
+
+div.install p { font-size: 16px; color: #000000; margin: 24px 48px; }
+
+div.install ol { margin: 0 48px; padding: 0 0 0 16px; }
+
+div.install ol li { margin: 6px 0; font-size: 16px; color: #000000; }
+
+div.install ol li i { font-size: 16px; color: #757575; position: relative; top: 2px; margin: 0; }
+
+div.install ol li img { display: inline-block; font-size: 16px; height: 16px; width: auto; position: relative; top: 3px; margin: 0; }
+
+/* ---------- INTRO ---------- */
+div.intro { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: #607D8B; z-index: 101; transition: opacity 500ms ease-out; }
+
+div.intro.isOpen ~ div.content { overflow: hidden; height: 1px; max-height: 1px; }
+
+div.intro div[data-id] { position: absolute; top: calc(50% - 32px); left: 50%; width: 500px; max-width: 85vw; height: auto; padding: 0; transform: translate(-50%, -50%); transition: left 200ms ease-out; }
+
+div.intro div[data-id]:nth-child(2) { left: 150%; }
+
+div.intro div[data-id]:nth-child(3) { left: 150%; }
+
+div.intro div[data-id]:nth-child(4) { left: 150%; }
+
+div.intro div[data-id] img { width: 80%; max-width: 100%; height: auto; display: block; margin: 0 auto; }
+
+div.intro div[data-id] p.title { font-size: 20px; font-weight: 500; color: #FFF; margin: 32px 0 8px 0; }
+
+div.intro div[data-id] p { font-size: 16px; font-weight: 400; color: #FFF; margin: 8px 0; }
+
+div.intro div.steps { position: absolute; bottom: 32px; left: 50%; width: auto; transform: translateX(-50%); }
+
+div.intro div.steps div.inactive { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: rgba(224, 224, 224, 0.57); margin: 0 10px 0 0; cursor: pointer; }
+
+div.intro div.steps div.inactive:last-child { margin: 0; }
+
+div.intro div.steps div.active { position: absolute; left: 0; top: 0; z-index: 1; width: 8px; height: 8px; border-radius: 50%; background-color: #FFF; margin: 0; cursor: pointer; transition: all 200ms ease-out; }
+
+div.intro div.next { position: absolute; bottom: 24px; right: calc(50% - 80px); color: #FFF; border-radius: 50%; overflow: hidden; cursor: pointer; }
+
+@media screen and (max-width: 799px) { div.intro div.next { right: 32px; } }
+
+div.intro div.prev { position: absolute; left: calc(50% - 80px); bottom: 24px; color: #FFF; border-radius: 50%; overflow: hidden; cursor: pointer; transition: opacity 120ms ease-out; }
+
+@media screen and (max-width: 799px) { div.intro div.prev { left: 32px; } }

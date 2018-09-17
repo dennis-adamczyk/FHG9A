@@ -1,0 +1,46 @@
+@import "../../../sass/vars"
+
+$primary-color: #2196F3
+$white: #FFF
+$background: #EEEEEE
+
+@mixin disableSelect()
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  -o-user-select: none
+  user-select: none
+
+@media screen and ($information-phone)
+  body, html
+    background-color: $background
+
+div.content
+
+  /* OFFLINE */
+
+  div.offline
+    background-color: transparent
+    width: auto
+    max-width: 100%
+    position: relative
+    top: calc(50vh - 64px)
+    margin: 0
+    transform: translateY(-50%)
+
+    @media screen and ($information-phone)
+      top: calc(50vh - 56px)
+
+    i
+      font-size: 48px
+      color: #757575
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+      margin: 0 auto
+
+    p
+      font-size: 18px
+      font-weight: 400
+      color: #757575
+      text-align: center

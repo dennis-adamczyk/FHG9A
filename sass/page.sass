@@ -1,0 +1,493 @@
+@import "vars"
+
+$primary-color: #2196F3
+$white: #FFF
+$background: #EEEEEE
+
+@mixin disableSelect()
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  -o-user-select: none
+  user-select: none
+
+div.content
+
+  /* ----- STUNDENPLAN ----- */
+
+  div.card
+    background-color: $white
+    border-radius: 2px
+    width: 750px
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    margin-bottom: 16px
+
+    @media screen and ($information-phone)
+      width: 97vw
+
+    &:last-of-type
+      margin-bottom: 32px
+
+    &.schedule
+      div.top
+        position: relative
+        top: 0
+        left: 0
+        right: 0
+        border-bottom: 1px solid #E0E0E0
+        height: 64px
+
+        @media screen and ($information-phone)
+          height: 56px
+
+        div.left
+          position: absolute
+          height: 40px
+          width: 40px
+          left: 12px
+          top: 12px
+          cursor: pointer
+
+          @media screen and ($information-phone)
+            left: 8px
+            top: 8px
+
+          i
+            color: #9E9E9E
+            height: 24px
+            width: 24px
+            padding: 8px
+            border-radius: 50%
+
+        p
+          @include disableSelect()
+          display: inline-block
+          font-size: 16px
+          margin: 0
+          padding: 0
+          position: relative
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          color: #616161
+          font-weight: 500
+          cursor: pointer
+
+        div.right
+          position: absolute
+          height: 40px
+          width: 40px
+          right: 12px
+          top: 12px
+          cursor: pointer
+
+          @media screen and ($information-phone)
+            right: 8px
+            top: 8px
+
+          i
+            color: #9E9E9E
+            height: 24px
+            width: 24px
+            padding: 8px
+            border-radius: 50%
+
+      div.list
+        position: relative
+        top: 0
+        left: 0
+        right: 0
+        height: auto
+        width: 100%
+
+        ul
+          margin: 8px 0 8px 0
+          padding: 0
+          width: 100%
+          position: relative
+          top: 0
+          left: 0
+          right: 0
+          list-style: none
+
+          @media screen and ($information-phone)
+            margin: 4px 0 4px 0
+
+          li
+            height: 72px
+            width: 100%
+            position: relative
+
+            @media screen and ($information-phone)
+              height: 60px
+
+            p
+              margin: 0
+              position: absolute
+
+            p.lesson
+              font-size: 14px
+              color: #757575
+              left: 32px
+              top: 18px
+
+              @media screen and ($information-phone)
+                left: 16px
+                top: 14px
+                font-size: 12px
+
+            p.subject
+              font-size: 16px
+              color: #212121
+              left: 32px
+              bottom: 18px
+
+              @media screen and ($information-phone)
+                left: 16px
+                bottom: 14px
+                font-size: 14px
+
+            p.time
+              font-size: 14px
+              color: #757575
+              right: 32px
+              top: 18px
+
+              @media screen and ($information-phone)
+                right: 16px
+                top: 14px
+                font-size: 12px
+
+            p.room
+              font-size: 14px
+              color: #757575
+              right: 32px
+              bottom: 18px
+
+              @media screen and ($information-phone)
+                right: 16px
+                bottom: 14px
+                font-size: 12px
+
+        div.loader
+          position: relative
+          left: 50%
+          transform: translateX(-50%)
+          width: 32px
+          padding: 8px 0
+          opacity: 1
+          transition: opacity 200ms ease-out
+
+          &::before
+            content: ''
+            display: block
+            padding-top: 100%
+
+          .circular
+            animation: rotate 2s linear infinite
+            height: 100%
+            transform-origin: center center
+            width: 100%
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            margin: auto
+
+            .path
+              stroke-dasharray: 1, 200
+              stroke-dashoffset: 0
+              stroke: #757575
+              animation: dash 1.5s ease-in-out infinite
+              stroke-linecap: round
+              stroke-width: 4px
+
+
+  /* ----- HAUSAUFGABEN ----- */
+
+  div.homework
+    div.top
+      position: relative
+      top: 0
+      left: 0
+      right: 0
+      // border-bottom: 1px solid #E0E0E0
+      height: 64px
+
+      @media screen and ($information-phone)
+        height: 56px
+
+      p
+        @include disableSelect()
+        display: inline-block
+        font-size: 16px
+        margin: 0
+        padding: 0
+        position: relative
+        top: 50%
+        left: 24px
+        transform: translateY(-50%)
+        color: #616161
+        font-weight: 500
+
+      div.more
+        position: absolute
+        right: 12px
+        top: 12px
+        color: #616161
+        margin: 0
+        padding: 0
+        cursor: pointer
+        height: 40px
+        width: 40px
+
+        @media screen and ($information-phone)
+          right: 8px
+          top: 8px
+
+        i
+          color: #9E9E9E
+          height: 24px
+          width: 24px
+          padding: 8px
+          border-radius: 50%
+
+    div.table
+      position: relative
+      top: 0
+      left: 0
+      right: 0
+      height: auto
+      width: 100%
+
+    table
+      width: 100%
+      height: auto
+      margin: 0
+      padding: 0
+      border-collapse: collapse
+      overflow-x: scroll
+
+      thead
+        height: 56px
+
+        tr
+          height: 56px
+
+          th
+            font-size: 12px
+            font-weight: bolder
+            color: rgba(0, 0, 0, .54)
+            text-align: left
+            padding: 0 8px
+            border-bottom: 1px solid rgba(0, 0, 0, .12)
+            border-collapse: collapse
+            border-spacing: 0
+
+            &:first-child
+              padding-left: 24px
+              width: 24px
+
+            i
+              color: rgba(0, 0, 0, .54)
+              cursor: pointer
+              transition: color 150ms ease-out
+
+              &.active
+                color: $primary-color
+
+
+      tbody
+        tr
+          width: 100%
+          height: 48px
+          transition: background-color 100ms ease-out
+
+          &:hover
+            background-color: $background
+
+          td
+            font-size: 13px
+            font-weight: 400
+            color: rgba(0, 0, 0, .87)
+            text-align: left
+            padding: 8px
+            border-bottom: 1px solid rgba(0, 0, 0, .12)
+            border-collapse: collapse
+            border-spacing: 0
+
+            &:first-child
+              padding-left: 24px
+              width: 24px
+
+            i
+              color: rgba(0, 0, 0, .54)
+              cursor: pointer
+              transition: color 150ms ease-out
+
+              &.active
+                color: $primary-color
+
+            a
+                text-decoration: none
+                color: $primary-color
+
+                &:hover
+                  text-decoration: underline
+
+    div.freetime
+      width: 80%
+      height: auto
+      display: block
+      position: relative
+      padding: 0 10%
+
+      i
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        color: rgba(0, 0, 0, .54)
+        margin: 0
+        padding: 15px 0 0 0
+        font-size: 30px
+
+      p
+        font-size: 14px
+        font-weight: 500
+        color: rgba(0, 0, 0, .54)
+        text-align: center
+        padding: 10px 0 20px 0
+        margin: 0
+
+  /* ----- TERMINE ----- */
+
+  div.dates
+    div.top
+      position: relative
+      top: 0
+      left: 0
+      right: 0
+      // border-bottom: 1px solid #E0E0E0
+      height: 64px
+
+      @media screen and ($information-phone)
+        height: 56px
+
+      p
+        @include disableSelect()
+        display: inline-block
+        font-size: 16px
+        margin: 0
+        padding: 0
+        position: relative
+        top: 50%
+        left: 24px
+        transform: translateY(-50%)
+        color: #616161
+        font-weight: 500
+
+      div.more
+        position: absolute
+        right: 12px
+        top: 12px
+        color: #616161
+        margin: 0
+        padding: 0
+        cursor: pointer
+        height: 40px
+        width: 40px
+
+        @media screen and ($information-phone)
+          right: 8px
+          top: 8px
+
+        i
+          color: #9E9E9E
+          height: 24px
+          width: 24px
+          padding: 8px
+          border-radius: 50%
+
+    div.table
+      position: relative
+      top: 0
+      left: 0
+      right: 0
+      height: auto
+      width: 100%
+
+    table
+      width: 100%
+      height: auto
+      margin: 0
+      padding: 0
+      border-collapse: collapse
+      overflow-x: scroll
+
+      thead
+        height: 56px
+
+        tr
+          height: 56px
+
+          th
+            font-size: 12px
+            font-weight: bolder
+            color: rgba(0, 0, 0, .54)
+            text-align: left
+            padding: 0 8px
+            border-bottom: 1px solid rgba(0, 0, 0, .12)
+            border-collapse: collapse
+            border-spacing: 0
+
+            &:first-child
+              padding-left: 24px
+
+
+      tbody
+        tr
+          width: 100%
+          height: 48px
+          transition: background-color 100ms ease-out
+
+          &:hover
+            background-color: $background
+
+          td
+            font-size: 13px
+            font-weight: 400
+            color: rgba(0, 0, 0, .87)
+            text-align: left
+            padding: 0 8px
+            border-bottom: 1px solid rgba(0, 0, 0, .12)
+            border-collapse: collapse
+            border-spacing: 0
+
+            &:first-child
+              padding-left: 24px
+
+
+
+@keyframes rotate
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)
+
+@keyframes dash
+  0%
+    stroke-dasharray: 1, 200
+    stroke-dashoffset: 0
+
+  50%
+    stroke-dasharray: 89, 200
+    stroke-dashoffset: -35px
+
+  100%
+    stroke-dasharray: 89, 200
+    stroke-dashoffset: -124px

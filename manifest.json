@@ -1,0 +1,22 @@
+{
+  "short_name": "FHG9A",
+  "name": "FHG9A",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "sizes": "260x260"
+    },
+    {
+      "src": "/img/logo.svg",
+      "sizes": "512x512"
+    }
+  ],
+  "scope": "/",
+  "start_url": "/index.php?webapp",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#2196F3",
+  "background_color": "#1565C0",
+  "gcm_sender_id": "ID",
+  "gcm_sender_id_comment": "Do not change the GCM Sender ID"
+}

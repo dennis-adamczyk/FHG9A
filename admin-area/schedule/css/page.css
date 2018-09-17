@@ -1,0 +1,118 @@
+div.content { /* SCHEDULE */ }
+
+div.content div.schedule-admin { background-color: #FFF; border-radius: 2px; width: 750px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); position: relative; margin: 0 auto 16px auto; }
+
+@media screen and (max-width: 799px) { div.content div.schedule-admin { width: 97vw; } }
+
+div.content div.schedule-admin div.top { position: relative; top: 0; left: 0; right: 0; border-bottom: 1px solid #E0E0E0; height: 64px; transition: background-color 120ms ease-out; }
+
+@media screen and (max-width: 799px) { div.content div.schedule-admin div.top { height: 56px; } }
+
+div.content div.schedule-admin div.top div.back { position: absolute; height: 40px; width: 40px; left: 14px; top: 12px; z-index: 1; border-radius: 50%; overflow: hidden; cursor: pointer; }
+
+@media screen and (max-width: 799px) { div.content div.schedule-admin div.top div.back { left: 8px; top: 8px; } }
+
+div.content div.schedule-admin div.top div.back i { color: #9E9E9E; height: 24px; width: 24px; padding: 8px; border-radius: 50%; overflow: hidden; }
+
+div.content div.schedule-admin div.top p { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; display: block; font-size: 16px; margin: 0; padding: 0; position: relative; top: 50%; text-align: center; transform: translateY(-50%); color: #616161; font-weight: 500; }
+
+div.content div.schedule-admin div.top div.autoincrement { position: absolute; height: 40px; width: 40px; right: 14px; top: 12px; z-index: 1; border-radius: 50%; overflow: hidden; cursor: pointer; }
+
+@media screen and (max-width: 799px) { div.content div.schedule-admin div.top div.autoincrement { right: 8px; top: 8px; } }
+
+div.content div.schedule-admin div.top div.autoincrement i { color: #9E9E9E; height: 24px; width: 24px; padding: 8px; border-radius: 50%; overflow: hidden; }
+
+div.content div.schedule-admin div.top div.add { position: absolute; height: 40px; width: 40px; right: 52px; top: 12px; z-index: 1; border-radius: 50%; overflow: hidden; cursor: pointer; }
+
+@media screen and (max-width: 799px) { div.content div.schedule-admin div.top div.add { right: 40px; top: 8px; } }
+
+div.content div.schedule-admin div.top div.add i { color: #9E9E9E; height: 24px; width: 24px; padding: 8px; border-radius: 50%; overflow: hidden; }
+
+div.content div.schedule-admin div.top.opt { background-color: #E3F2FD; }
+
+div.content div.schedule-admin div.top.opt p.select { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; display: inline-block; font-size: 14px; margin: 0; padding: 0 24px; position: relative; top: 50%; text-align: left; transform: translateY(-50%); color: #2196F3; font-weight: 400; }
+
+div.content div.schedule-admin div.top.opt div.edit { position: absolute; height: 40px; width: 40px; right: 14px; top: 12px; z-index: 1; border-radius: 50%; overflow: hidden; cursor: pointer; }
+
+@media screen and (max-width: 799px) { div.content div.schedule-admin div.top.opt div.edit { right: 8px; top: 8px; } }
+
+div.content div.schedule-admin div.top.opt div.edit i { color: #9E9E9E; height: 24px; width: 24px; padding: 8px; border-radius: 50%; overflow: hidden; }
+
+div.content div.schedule-admin div.top.opt div.delete { position: absolute; height: 40px; width: 40px; right: 52px; top: 12px; z-index: 1; border-radius: 50%; overflow: hidden; cursor: pointer; }
+
+@media screen and (max-width: 799px) { div.content div.schedule-admin div.top.opt div.delete { right: 40px; top: 8px; } }
+
+div.content div.schedule-admin div.top.opt div.delete i { color: #9E9E9E; height: 24px; width: 24px; padding: 8px; border-radius: 50%; overflow: hidden; }
+
+div.content div.schedule-admin div.body { position: relative; top: 0; left: 0; right: 0; height: auto; width: 100%; overflow-x: auto; }
+
+div.content div.schedule-admin div.body table { width: 100%; height: auto; margin: 0; padding: 0; border-collapse: collapse; overflow-x: scroll; }
+
+div.content div.schedule-admin div.body table thead { height: 56px; }
+
+div.content div.schedule-admin div.body table thead tr { height: 56px; }
+
+div.content div.schedule-admin div.body table thead tr th { font-size: 12px; font-weight: bolder; color: rgba(0, 0, 0, 0.54); text-align: left; padding: 0 8px; border-bottom: 1px solid rgba(0, 0, 0, 0.12); border-collapse: collapse; border-spacing: 0; }
+
+div.content div.schedule-admin div.body table thead tr th:first-child { padding-left: 24px; width: 24px; }
+
+div.content div.schedule-admin div.body table thead tr th:nth-child(2) { width: 24px; }
+
+div.content div.schedule-admin div.body table thead tr th:nth-child(3) { width: 24px; }
+
+div.content div.schedule-admin div.body table thead tr th:nth-child(4) { width: 24px; }
+
+div.content div.schedule-admin div.body table thead tr th i { color: rgba(0, 0, 0, 0.54); cursor: pointer; transition: color 150ms ease-out; }
+
+div.content div.schedule-admin div.body table thead tr th i.active { color: #2196F3; }
+
+div.content div.schedule-admin div.body table tbody tr { width: 100%; height: 48px; transition: background-color 100ms ease-out; }
+
+div.content div.schedule-admin div.body table tbody tr:hover, div.content div.schedule-admin div.body table tbody tr.selected { background-color: #EEEEEE; }
+
+div.content div.schedule-admin div.body table tbody tr td { position: relative; font-size: 13px; font-weight: 400; color: rgba(0, 0, 0, 0.87); text-align: left; padding: 8px 8px; border-bottom: 1px solid rgba(0, 0, 0, 0.12); border-collapse: collapse; border-spacing: 0; max-width: 140px; overflow-wrap: break-word; }
+
+div.content div.schedule-admin div.body table tbody tr td:first-child { padding-left: 24px; width: 24px; }
+
+div.content div.schedule-admin div.body table tbody tr td:first-child i { color: rgba(0, 0, 0, 0.54); cursor: pointer; transition: color 150ms ease-out; }
+
+div.content div.schedule-admin div.body table tbody tr td:first-child i.active { color: #2196F3; }
+
+div.content div.schedule-admin div.body table tbody tr td:nth-child(2) { text-align: right; width: 24px; max-width: 24px; }
+
+div.content div.schedule-admin div.body table tbody tr td:nth-child(3) { text-align: right; width: 24px; max-width: 24px; }
+
+div.content div.schedule-admin div.body table tbody tr td:nth-child(4) { text-align: right; width: 24px; max-width: 24px; }
+
+div.content div.schedule-admin div.body table tbody tr td[contenteditable] { outline: none; caret-color: #2196F3; }
+
+div.content div.schedule-admin div.body table tbody tr td[contenteditable]::before { content: ""; display: block; position: absolute; bottom: 6px; right: 2px; left: 2px; background-color: #757575; height: 1px; transition: background-color 120ms ease-out; }
+
+div.content div.schedule-admin div.body table tbody tr td[contenteditable]:focus::before { background-color: #2196F3; }
+
+/* POPUP */
+div.popup { position: fixed; top: 50%; left: 50%; z-index: 100; min-width: 298px; width: fit-content; background-color: #FFF; border-radius: 2px; box-shadow: 0 -2px 25px 0 rgba(0, 0, 0, 0.15), 0 13px 25px 0 rgba(0, 0, 0, 0.3); transform: translate(-50%, -50%); display: none; opacity: 0; transition: opacity 150ms ease-out; }
+
+div.popup p.title { margin: 0; padding: 24px 24px 20px 24px; font-weight: 500; font-size: 20px; }
+
+div.popup div.body { padding: 0 24px 24px 24px; }
+
+div.popup div.body div.group { margin: 0 0 8px 0; display: block; position: relative; }
+
+div.popup div.body div.group:last-child { margin: 0; }
+
+div.popup div.body div.group input { width: 50px; height: 35px; font-size: 16px; border: none; border-bottom: 1px solid #9E9E9E; background-color: transparant; position: relative; transition: border 0.2s ease-out; caret-color: #2196F3; display: block; margin: 0 auto; padding: 0; font-size: 14px; color: #212121; }
+
+div.popup div.body div.group input:hover { border-color: #212121 !important; }
+
+div.popup div.body div.group input:focus { outline: none; border-color: #2196F3 !important; }
+
+div.popup div.buttons { padding: 8px 8px 8px 24px; }
+
+div.popup div.buttons div.ok { display: inline-block; position: relative; left: 100%; transform: translateX(-100%); height: 36px; width: auto; border-radius: 2px; padding: 0 16px; cursor: pointer; transition: background 120ms ease-out; }
+
+div.popup div.buttons div.ok:hover { background-color: #EEEEEE; }
+
+div.popup div.buttons div.ok p { margin: 0 auto; padding: 0; display: block; position: relative; top: 50%; transform: translateY(-50%); color: #2196F3; font-weight: 500; font-size: 14px; text-align: center; text-transform: uppercase; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; }
+
+div.popup-overlay { z-index: 99; position: fixed; top: 0; right: 0; bottom: 0; left: 0; display: none; opacity: 0; background-color: rgba(0, 0, 0, 0.5); transition: opacity 150ms ease-out; }

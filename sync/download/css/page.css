@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+div.content { /* HOMEWORK */ }
+
+div.content div.sync { background-color: #FFF; border-radius: 2px; width: 750px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); position: relative; margin: 0 auto 16px auto; }
+
+@media screen and (max-width: 799px) { div.content div.sync { width: 97vw; } }
+
+div.content div.sync div.top { position: relative; top: 0; left: 0; right: 0; border-bottom: 1px solid #E0E0E0; height: 64px; }
+
+@media screen and (max-width: 799px) { div.content div.sync div.top { height: 56px; } }
+
+div.content div.sync div.top p { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; display: block; font-size: 16px; margin: 0; padding: 0; position: relative; top: 50%; text-align: center; transform: translateY(-50%); color: #616161; font-weight: 500; }
+
+div.content div.sync div.body { position: relative; top: 0; left: 0; right: 0; height: auto; padding: 16px 32px; }
+
+div.content div.sync div.body p { color: #212121; font-size: 14px; margin: 14px 0; font-weight: 400; }
+
+div.content div.sync div.body p.error { color: #F44336; }
+
+div.content div.sync div.body p i { color: #757575; font-size: 14px; font-weight: 400; position: relative; top: 2px; margin: 0; }
+
+div.content div.sync div.body div.code { width: 180px; border: 1px solid #757575; display: block; margin: 30px auto 20px auto; background-color: #EEEEEE; }
+
+div.content div.sync div.body div.code input { width: 180px; background-color: transparent; outline: none; border: none; box-shadow: none; font-size: 16px; color: #000000; margin: 4px 0; text-align: center; font-family: 'Roboto Mono', monospace; }
+
+div.content div.sync div.body button { width: auto; height: 36px; border: none; outline: none; background-color: #2196F3; border-radius: 2px; box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12); padding: 1px 16px; display: block; margin: 0 auto; text-align: center; font-size: 14px; line-height: 36px; text-transform: uppercase; font-weight: 500; color: #FFF; cursor: pointer; }

@@ -1,0 +1,19 @@
+div.content { /* ENGLISH ASSIGNMENTS */ }
+
+div.content div.english-assignments-admin { background-color: #FFF; border-radius: 2px; width: 750px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); position: relative; margin: 0 auto 16px auto; }
+
+@media screen and (max-width: 799px) { div.content div.english-assignments-admin { width: 97vw; } }
+
+div.content div.english-assignments-admin div.top { position: relative; top: 0; left: 0; right: 0; border-bottom: 1px solid #E0E0E0; height: 64px; transition: background-color 120ms ease-out; }
+
+@media screen and (max-width: 799px) { div.content div.english-assignments-admin div.top { height: 56px; } }
+
+div.content div.english-assignments-admin div.top div.back { position: absolute; height: 40px; width: 40px; left: 14px; top: 12px; z-index: 1; border-radius: 50%; overflow: hidden; cursor: pointer; }
+
+@media screen and (max-width: 799px) { div.content div.english-assignments-admin div.top div.back { left: 8px; top: 8px; } }
+
+div.content div.english-assignments-admin div.top div.back i { color: #9E9E9E; height: 24px; width: 24px; padding: 8px; border-radius: 50%; overflow: hidden; }
+
+div.content div.english-assignments-admin div.top p { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; display: block; font-size: 16px; margin: 0; padding: 0; position: relative; top: 50%; text-align: center; transform: translateY(-50%); color: #616161; font-weight: 500; }
+
+div.content div.english-assignments-admin div.body { position: relative; top: 0; left: 0; right: 0; height: auto; width: 100%; overflow-x: auto; }

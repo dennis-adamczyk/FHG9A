@@ -1,0 +1,86 @@
+div.content { /* HOMEWORK */ }
+
+div.content div.homework-admin { background-color: #FFF; border-radius: 2px; width: 750px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); position: relative; margin: 0 auto 16px auto; }
+
+@media screen and (max-width: 799px) { div.content div.homework-admin { width: 97vw; } }
+
+div.content div.homework-admin div.top { position: relative; top: 0; left: 0; right: 0; border-bottom: 1px solid #E0E0E0; height: 64px; }
+
+@media screen and (max-width: 799px) { div.content div.homework-admin div.top { height: 56px; } }
+
+div.content div.homework-admin div.top div.back { position: absolute; height: 40px; width: 40px; left: 14px; top: 12px; z-index: 1; border-radius: 50%; overflow: hidden; cursor: pointer; }
+
+@media screen and (max-width: 799px) { div.content div.homework-admin div.top div.back { left: 8px; top: 8px; } }
+
+div.content div.homework-admin div.top div.back i { color: #9E9E9E; height: 24px; width: 24px; padding: 8px; border-radius: 50%; overflow: hidden; }
+
+div.content div.homework-admin div.top p { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; display: block; font-size: 16px; margin: 0; padding: 0; position: relative; top: 50%; text-align: center; transform: translateY(-50%); color: #616161; font-weight: 500; }
+
+div.content div.homework-admin div.top div.left { position: absolute; height: 40px; width: 40px; right: 52px; top: 12px; z-index: 1; border-radius: 50%; overflow: hidden; cursor: pointer; }
+
+@media screen and (max-width: 799px) { div.content div.homework-admin div.top div.left { right: 40px; top: 8px; } }
+
+div.content div.homework-admin div.top div.left i { color: #9E9E9E; height: 24px; width: 24px; padding: 8px; border-radius: 50%; overflow: hidden; }
+
+div.content div.homework-admin div.top div.right { position: absolute; height: 40px; width: 40px; right: 14px; top: 12px; z-index: 1; border-radius: 50%; overflow: hidden; cursor: pointer; }
+
+@media screen and (max-width: 799px) { div.content div.homework-admin div.top div.right { right: 8px; top: 8px; } }
+
+div.content div.homework-admin div.top div.right i { color: #9E9E9E; height: 24px; width: 24px; padding: 8px; border-radius: 50%; overflow: hidden; }
+
+div.content div.homework-admin div.body { position: relative; top: 0; left: 0; right: 0; height: auto; width: 100%; overflow-x: auto; }
+
+div.content div.homework-admin div.body p.day { font-size: 15px; margin: 32px 24px 0px 24px; padding: 0; position: relative; color: #212121; font-weight: 500; }
+
+div.content div.homework-admin div.body p.day:first-child { margin: 24px 24px 0 24px; }
+
+@media screen and (max-width: 799px) { div.content div.homework-admin div.body p.day:first-child { margin: 24px 16px 0 16px; } }
+
+div.content div.homework-admin div.body p.day.today { color: #2196F3; font-weight: 600; }
+
+@media screen and (max-width: 799px) { div.content div.homework-admin div.body p.day { margin: 32px 16px 0px 16px; } }
+
+div.content div.homework-admin div.body table { width: 100%; height: auto; margin: 0; padding: 0; border-collapse: collapse; }
+
+div.content div.homework-admin div.body table thead { height: 48px; }
+
+div.content div.homework-admin div.body table thead tr { height: 48px; }
+
+div.content div.homework-admin div.body table thead tr th { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; font-size: 12px; font-weight: bolder; color: rgba(0, 0, 0, 0.54); text-align: left; padding: 0 8px; border-bottom: 1px solid rgba(0, 0, 0, 0.12); border-collapse: collapse; border-spacing: 0; }
+
+div.content div.homework-admin div.body table thead tr th i.checkbox { color: rgba(0, 0, 0, 0.54); cursor: pointer; transition: color 150ms ease-out; }
+
+div.content div.homework-admin div.body table thead tr th i.checkbox.active { color: #2196F3; }
+
+div.content div.homework-admin div.body table thead tr th:first-child { padding-left: 24px; width: 24px; }
+
+@media screen and (max-width: 799px) { div.content div.homework-admin div.body table thead tr th:first-child { padding-left: 16px; } }
+
+div.content div.homework-admin div.body table thead tr th:last-child { min-width: 300px; }
+
+@media screen and (max-width: 799px) { div.content div.homework-admin div.body table thead tr th:nth-child(2) { width: 2%; }
+  div.content div.homework-admin div.body table thead tr th:last-child { min-width: auto; } }
+
+div.content div.homework-admin div.body table tbody tr { width: 100%; max-width: 100%; height: 48px; transition: background-color 100ms ease-out; }
+
+div.content div.homework-admin div.body table tbody tr:hover { background-color: #EEEEEE; }
+
+div.content div.homework-admin div.body table tbody tr td { position: relative; font-size: 13px; font-weight: 400; color: rgba(0, 0, 0, 0.87); text-align: left; padding: 8px 8px; border-bottom: 1px solid rgba(0, 0, 0, 0.12); border-collapse: collapse; border-spacing: 0; overflow-wrap: break-word; }
+
+div.content div.homework-admin div.body table tbody tr td:first-child { text-align: right; padding-left: 24px; width: 24px; }
+
+@media screen and (max-width: 799px) { div.content div.homework-admin div.body table tbody tr td:first-child { padding-left: 16px; } }
+
+div.content div.homework-admin div.body table tbody tr td i.checkbox { color: rgba(0, 0, 0, 0.54); cursor: pointer; transition: color 150ms ease-out; }
+
+div.content div.homework-admin div.body table tbody tr td i.checkbox.active { color: #2196F3; }
+
+div.content div.homework-admin div.body table tbody tr td[contenteditable] { outline: none; caret-color: #2196F3; }
+
+div.content div.homework-admin div.body table tbody tr td[contenteditable]::before { content: ""; display: block; position: absolute; bottom: 6px; right: 4px; left: 4px; background-color: #BDBDBD; height: 1px; transition: background-color 120ms ease-out; }
+
+div.content div.homework-admin div.body table tbody tr td[contenteditable]:focus::before { background-color: #2196F3; }
+
+div.content div.homework-admin div.body table tbody tr td a { text-decoration: none; color: #2196F3; }
+
+div.content div.homework-admin div.body table tbody tr td a:hover { text-decoration: underline; }

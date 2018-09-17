@@ -1,0 +1,11 @@
+@media screen and (max-width: 799px) { body, html { background-color: #EEEEEE; } }
+
+div.content { /* OFFLINE */ }
+
+div.content div.offline { background-color: transparent; width: auto; max-width: 100%; position: relative; top: calc(50vh - 64px); margin: 0; transform: translateY(-50%); }
+
+@media screen and (max-width: 799px) { div.content div.offline { top: calc(50vh - 56px); } }
+
+div.content div.offline i { font-size: 48px; color: #757575; position: relative; left: 50%; transform: translateX(-50%); margin: 0 auto; }
+
+div.content div.offline p { font-size: 18px; font-weight: 400; color: #757575; text-align: center; }

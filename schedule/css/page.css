@@ -1,0 +1,153 @@
+@media screen and (max-width: 799px) { body, html { background-color: #FFF; }
+  header { box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26) !important; } }
+
+div.content { /* ----- EXTENDED-HEADER -----*/ /* ----- WEEKVIEW ----- */ /* DAYVIEW */ }
+
+@media screen and (max-width: 799px) { div.content div.extended-header { display: none; } }
+
+div.content div.schedule:not(.dayView) { background-color: #FFF; border-radius: 2px; width: 750px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); position: relative; margin: 0 auto 16px auto; }
+
+@media screen and (max-width: 799px) { div.content div.schedule:not(.dayView) { border-radius: 0; width: 100%; box-shadow: none; margin: 0; } }
+
+div.content div.schedule:not(.dayView) div.top { position: relative; top: 0; left: 0; right: 0; border-bottom: 1px solid #E0E0E0; height: 64px; }
+
+@media screen and (max-width: 799px) { div.content div.schedule:not(.dayView) div.top { height: 56px; } }
+
+div.content div.schedule:not(.dayView) div.top p { display: inline-block; font-size: 16px; margin: 0; padding: 0; position: relative; top: 50%; left: 24px; transform: translateY(-50%); color: #616161; font-weight: 500; }
+
+@media screen and (max-width: 799px) { div.content div.schedule:not(.dayView) div.top p { left: 16px; } }
+
+div.content div.schedule:not(.dayView) div.top div#switch-view { position: absolute; right: 12px; top: 50%; color: #616161; margin: 0; padding: 0; cursor: pointer; height: 40px; width: 40px; transform: translateY(-50%); }
+
+div.content div.schedule:not(.dayView) div.top div#switch-view i { color: #9E9E9E; height: 24px; width: 24px; padding: 8px; border-radius: 50%; }
+
+div.content div.schedule:not(.dayView) div.body { position: relative; top: 0; left: 0; right: 0; height: auto; width: 100%; }
+
+div.content div.schedule:not(.dayView) div.body table { width: 100%; height: auto; margin: 0; padding: 0; border-collapse: collapse; }
+
+div.content div.schedule:not(.dayView) div.body table thead { height: 24px; }
+
+div.content div.schedule:not(.dayView) div.body table thead tr { height: 24px; }
+
+div.content div.schedule:not(.dayView) div.body table thead tr th { font-size: 12px; font-weight: bolder; color: rgba(0, 0, 0, 0.54); text-align: center; padding: 0 8px; border-bottom: 1px solid rgba(0, 0, 0, 0.04); border-collapse: collapse; border-spacing: 0; width: 17.4%; }
+
+div.content div.schedule:not(.dayView) div.body table thead tr th:first-of-type { width: 13%; }
+
+div.content div.schedule:not(.dayView) div.body table thead tr th.today { color: #212121; }
+
+div.content div.schedule:not(.dayView) div.body table tbody tr { height: 96px; }
+
+div.content div.schedule:not(.dayView) div.body table tbody tr.now { background-color: #EEEEEE; }
+
+div.content div.schedule:not(.dayView) div.body table tbody tr.now th { color: #414141; }
+
+div.content div.schedule:not(.dayView) div.body table tbody tr th { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; font-size: 12px; font-weight: 400; color: rgba(0, 0, 0, 0.54); text-align: right; padding: 0 8px; border-bottom: 1px solid rgba(0, 0, 0, 0.04); border-collapse: collapse; border-spacing: 0; }
+
+div.content div.schedule:not(.dayView) div.body table tbody tr th.now { color: #212121; }
+
+@media screen and (max-width: 799px) { div.content div.schedule:not(.dayView) div.body table tbody tr th { vertical-align: top; padding: 8px; } }
+
+div.content div.schedule:not(.dayView) div.body table tbody tr td { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; border-bottom: 1px solid rgba(0, 0, 0, 0.04); border-left: 1px solid rgba(0, 0, 0, 0.04); }
+
+div.content div.schedule:not(.dayView) div.body table tbody tr td div.lesson { position: relative; width: 95%; height: auto; min-height: 87px; background-color: #2196F3; color: #FFF; border-radius: 2px; margin: 2.5% auto; cursor: pointer; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+div.content div.schedule:not(.dayView) div.body table tbody tr td div.lesson div { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; }
+
+div.content div.schedule:not(.dayView) div.body table tbody tr td div.lesson div p { display: block; font-size: 14px; font-weight: 400; text-align: center; margin: 0; padding: 0 8px; }
+
+div.content div.schedule:not(.dayView) div.body table tbody tr td div.lesson div p.fach { font-weight: 500; padding: 8px 8px 0 8px; }
+
+div.content div.schedule:not(.dayView) div.body table tbody tr td div.lesson div p.raum { padding: 0 8px 8px 8px; }
+
+div.content div.schedule.dayView { background-color: #FFF; border-radius: 2px; width: 750px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); position: relative; margin: 0 auto 16px auto; }
+
+@media screen and (max-width: 799px) { div.content div.schedule.dayView { border-radius: 0; width: 100%; box-shadow: none; margin: 0; } }
+
+div.content div.schedule.dayView div.top { position: relative; top: 0; left: 0; right: 0; border-bottom: 1px solid #E0E0E0; height: 64px; }
+
+@media screen and (max-width: 799px) { div.content div.schedule.dayView div.top { height: 56px; } }
+
+div.content div.schedule.dayView div.top p { display: inline-block; font-size: 16px; margin: 0; padding: 0; position: relative; top: 50%; left: 24px; transform: translateY(-50%); color: #616161; font-weight: 500; }
+
+@media screen and (max-width: 799px) { div.content div.schedule.dayView div.top p { left: 16px; } }
+
+div.content div.schedule.dayView div.top div#switch-view { position: absolute; right: 12px; top: 50%; color: #616161; margin: 0; padding: 0; cursor: pointer; height: 40px; width: 40px; transform: translateY(-50%); }
+
+div.content div.schedule.dayView div.top div#switch-view i { color: #9E9E9E; height: 24px; width: 24px; padding: 8px; border-radius: 50%; }
+
+div.content div.schedule.dayView div.body { position: relative; top: 0; left: 0; right: 0; height: auto; width: 100%; }
+
+div.content div.schedule.dayView div.body p.day { font-size: 15px; margin: 24px 24px 8px 24px; padding: 0; position: relative; color: #212121; font-weight: 500; }
+
+div.content div.schedule.dayView div.body p.day.today { color: #2196F3; font-weight: 600; }
+
+@media screen and (max-width: 799px) { div.content div.schedule.dayView div.body p.day { margin: 24px 16px 8px 16px; } }
+
+div.content div.schedule.dayView div.body table { width: 100%; height: auto; margin: 0; padding: 0; border-collapse: collapse; }
+
+div.content div.schedule.dayView div.body table thead { height: 48px; }
+
+div.content div.schedule.dayView div.body table thead tr { height: 48px; }
+
+div.content div.schedule.dayView div.body table thead tr th { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; font-size: 12px; font-weight: bolder; color: rgba(0, 0, 0, 0.54); text-align: left; padding: 0 8px; border-bottom: 1px solid rgba(0, 0, 0, 0.12); border-collapse: collapse; border-spacing: 0; }
+
+div.content div.schedule.dayView div.body table thead tr th:first-child { padding-left: 24px; width: 24px; }
+
+@media screen and (max-width: 799px) { div.content div.schedule.dayView div.body table thead tr th:first-child { padding-left: 16px; } }
+
+div.content div.schedule.dayView div.body table thead tr th:nth-child(2) { width: 80px; }
+
+div.content div.schedule.dayView div.body table tbody tr { width: 100%; height: 64px; }
+
+div.content div.schedule.dayView div.body table tbody tr.now { background-color: #EEEEEE; }
+
+div.content div.schedule.dayView div.body table tbody tr td { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; font-size: 13px; font-weight: 400; color: rgba(0, 0, 0, 0.87); text-align: left; padding: 0 8px; border-bottom: 1px solid rgba(0, 0, 0, 0.12); border-collapse: collapse; border-spacing: 0; }
+
+div.content div.schedule.dayView div.body table tbody tr td:first-child { text-align: right; padding-left: 24px; width: 24px; }
+
+@media screen and (max-width: 799px) { div.content div.schedule.dayView div.body table tbody tr td:first-child { padding-left: 16px; } }
+
+div.content div.schedule.dayView div.body table tbody tr td:nth-child(2) { width: 80px; }
+
+div.content div.schedule.dayView div.body table tbody tr td div.lesson { position: relative; width: 100%; height: auto; min-height: 60px; background-color: #2196F3; color: #FFF; border-radius: 2px; margin: 4px auto; cursor: pointer; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+div.content div.schedule.dayView div.body table tbody tr td div.lesson p { position: absolute; display: inline-block; top: 50%; transform: translateY(-50%); font-size: 14px; font-weight: 400; text-align: center; margin: 0; padding: 0 8px; }
+
+div.content div.schedule.dayView div.body table tbody tr td div.lesson p.fach { font-weight: 500; padding: 8px 0 8px 48px; }
+
+@media screen and (max-width: 799px) { div.content div.schedule.dayView div.body table tbody tr td div.lesson p.fach { padding: 8px 0 8px 16px; } }
+
+div.content div.schedule.dayView div.body table tbody tr td div.lesson p.lehrer { left: 50%; transform: translate(-50%, -50%); }
+
+div.content div.schedule.dayView div.body table tbody tr td div.lesson p.raum { right: 0; padding: 8px 48px 8px 0; }
+
+@media screen and (max-width: 799px) { div.content div.schedule.dayView div.body table tbody tr td div.lesson p.raum { padding: 8px 16px 8px 0; } }
+
+/* POPUP */
+div.popup { position: fixed; top: 50%; left: 50%; z-index: 100; min-width: 298px; width: fit-content; background-color: #FFF; border-radius: 2px; box-shadow: 0 -2px 25px 0 rgba(0, 0, 0, 0.15), 0 13px 25px 0 rgba(0, 0, 0, 0.3); transform: translate(-50%, -50%); display: none; opacity: 0; transition: opacity 120ms ease-out; }
+
+div.popup p.title { margin: 0; padding: 24px 24px 20px 24px; font-weight: 500; font-size: 20px; }
+
+div.popup div.body { padding: 0 24px 24px 24px; }
+
+div.popup div.body div.group { margin: 0 16px 0 0; display: inline-block; position: relative; }
+
+div.popup div.body div.group:last-child { margin: 0; }
+
+div.popup div.body div.group p.key { margin: 0; padding: 0; font-size: 12px; color: #757575; }
+
+div.popup div.body div.group p.value { margin: 0 0 4px 0; padding: 0; font-size: 14px; color: #212121; }
+
+div.popup div.body div.group p.value.color { width: 0px; height: 0px; display: block; background-color: #2196F3; text-align: center; color: transparent; }
+
+div.popup div.body div.group p.value.color::before { content: ""; width: 14px; height: 14px; position: absolute; left: 50%; transform: translateX(-50%); display: block; text-align: center; border-radius: 50%; color: transparent; background-color: inherit; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+div.popup div.buttons { padding: 8px 8px 8px 24px; }
+
+div.popup div.buttons div.ok { display: inline-block; position: relative; left: 100%; transform: translateX(-100%); height: 36px; width: auto; border-radius: 2px; padding: 0 16px; cursor: pointer; transition: background 120ms ease-out; }
+
+div.popup div.buttons div.ok:hover { background-color: #EEEEEE; }
+
+div.popup div.buttons div.ok p { margin: 0 auto; padding: 0; display: block; position: relative; top: 50%; transform: translateY(-50%); color: #2196F3; font-weight: 500; font-size: 14px; text-align: center; text-transform: uppercase; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; }
+
+div.popup-overlay { z-index: 99; position: fixed; top: 0; right: 0; bottom: 0; left: 0; display: none; opacity: 0; background-color: rgba(0, 0, 0, 0.5); transition: opacity 120ms ease-out; }
